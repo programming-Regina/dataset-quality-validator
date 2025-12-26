@@ -34,6 +34,7 @@ El sistema realiza las siguientes tareas:
 6. Utiliza un modelo de lenguaje local para interpretar el reporte
 7. Guarda la interpretación en un archivo de texto
 
+![Vista de la aplicación](img/captura.png)
 ---
 
 ## Qué NO hace este proyecto
