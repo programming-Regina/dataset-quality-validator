@@ -123,6 +123,21 @@ Este proyecto está pensado para estudiantes de análisis de datos con nivel int
 
 ---
 
+## 🔧 Requerimientos de hardware
+
+Para ejecutar el flujo completo de este repositorio (análisis de datos con Python y generación de reportes con IA local):  
+
+- **Python + scripts:** la parte de Python es liviana y funciona en cualquier máquina con Python 3.x y memoria estándar.  
+- **IA local (LM Studio + modelo `nous‑hermes‑2‑mistral‑7b‑dpo`):** se beneficia de hardware más potente para un rendimiento óptimo:  
+  - **GPU:** ≥12 GB de VRAM para inferencia eficiente.  
+  - **RAM del sistema:** 16 – 32 GB.  
+  - **Almacenamiento:** SSD con espacio suficiente para modelos y datasets.  
+- **Opcional:** puede ejecutarse sin GPU (solo CPU), aunque con menor velocidad.  
+
+💡 Se recomienda usar siempre un **entorno virtual (`venv`)** para aislar dependencias y mantener el entorno seguro.
+
+---
+
 ## Dataset
 
 El dataset utilizado en este proyecto es **Adult Income Dataset**, disponible públicamente en Kaggle:
