@@ -1,46 +1,22 @@
-<<<<<<< HEAD
 {
-    "fecha_ejecucion": "2025-12-25 21:26",
-    "filas": 48842,
-    "columnas": 15,
-    "umbral_nulos": 0.05,
-    "valores_nulos": {
-        "workclass": 0.0573,
-        "education": 0.0,
-        "marital-status": 0.0,
-        "occupation": 0.0575,
-        "relationship": 0.0,
-        "race": 0.0,
-        "gender": 0.0,
-        "native-country": 0.0175,
-        "income": 0.0
-    },
-    "columnas_con_problemas": {
-        "workclass": 0.0573,
-        "occupation": 0.0575
-    },
-    "decision": "REVISAR"
-=======
-{
-    "fecha_ejecucion": "2025-12-25 21:26",
-    "filas": 48842,
-    "columnas": 15,
-    "umbral_nulos": 0.05,
-    "valores_nulos": {
-        "workclass": 0.0573,
-        "education": 0.0,
-        "marital-status": 0.0,
-        "occupation": 0.0575,
-        "relationship": 0.0,
-        "race": 0.0,
-        "gender": 0.0,
-        "native-country": 0.0175,
-        "income": 0.0
-    },
-    "columnas_con_problemas": {
-        "workclass": 0.0573,
-        "occupation": 0.0575
-    },
-    "decision": "REVISAR"
->>>>>>> edded61389561967a029ca22464087e18e66149d
+  "fecha_ejecucion": "2025-12-25 21:26",
+  "filas": 48842,
+  "columnas": 15,
+  "umbral_nulos": 0.05,
+  "valores_nulos": {
+    "workclass": 0.0573,
+    "education": 0.0,
+    "marital-status": 0.0,
+    "occupation": 0.0575,
+    "relationship": 0.0,
+    "race": 0.0,
+    "gender": 0.0,
+    "native-country": 0.0175,
+    "income": 0.0
+  },
+  "columnas_con_problemas": {
+    "workclass": 0.0573,
+    "occupation": 0.0575
+  },
+  "decision": "REVISAR"
 }
