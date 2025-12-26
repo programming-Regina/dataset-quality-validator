@@ -1,0 +1,11 @@
+INTERPRETACIÓN AUTOMÁTICA DEL REPORTE
+====================================
+
+Decisión: Revisar
+
+Impacto: La validación del dataset ha detectado problemas en las columnas 'workclass' y 'occupation', con tasas de valores nulos del 5,73% y 5,75%, respectivamente. Estos niveles superan el umbral permitido de 5%.
+
+Acciones recomendadas:
+- Investigar y corregir las causas de los valores nulos en dichas columnas.
+- Revisar y limpiar datos si es necesario para asegurar la calidad del dataset.
+- Monitorear de cerca estas columnas durante el procesamiento futuro para prevenir errores similares.
