@@ -1,3 +1,16 @@
+"""
+Autor: Regina N. Molares
+Fecha: Diciembre 2025
+Parte del paquete: dataset-quality-validator
+- inspect_data.py
+- interpretar_report.py
+- JSON generado
+- Reporte TXT
+- Ejecución con IA local (LM Studio con nous-hermes-2-mistral-7b-dpo)
+Descripción: Script que analiza datasets localmente, genera JSON de información y produce reportes TXT usando IA local (LM Studio).
+Repositorio: https://github.com/programming-Regina/dataset-quality-validator
+"""
+
 import pandas as pd
 import json
 from datetime import datetime
