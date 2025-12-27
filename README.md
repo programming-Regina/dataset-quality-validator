@@ -94,12 +94,67 @@ dataset_validator/
 
 ---
 
+## Modelos de IA local recomendados (según recursos)
+
+Este proyecto no depende de un modelo específico.  
+Cualquier modelo de lenguaje que pueda ejecutarse localmente y responder a prompts en español es suficiente para cumplir el objetivo pedagógico.
+
+Se priorizan modelos livianos, accesibles y reproducibles, ya que la IA solo interpreta un reporte resumido y no procesa datos crudos.
+
+### Opciones recomendadas (ordenadas por menor consumo de recursos)
+
+#### Modelos muy livianos (CPU / baja RAM)
+
+Adecuados para notebooks sin GPU o equipos con recursos limitados:
+
+- phi-2  
+- tinyllama  
+- qwen2.5-1.5b  
+- mistral-7b-instruct (versiones cuantizadas)
+
+Estos modelos ofrecen velocidad moderada y calidad suficiente para tareas de interpretación simple.
+
+---
+
+####  Modelos intermedios (CPU potente o GPU básica)
+
+Buen equilibrio entre calidad de salida y consumo de recursos:
+
+- nous-hermes-2-mistral-7b-dpo (utilizado en este ejemplo)
+- openhermes-2.5-mistral  
+- qwen2.5-7b-instruct  
+
+Recomendados para una experiencia más fluida sin requerir hardware avanzado.
+
+---
+
+#### Modelos de mayor tamaño (opcional)
+
+No son necesarios para este ejemplo, aunque pueden utilizarse:
+
+- Modelos de 13B o superiores  
+
+Requieren mayor capacidad de cómputo y no aportan valor pedagógico adicional para este pipeline.
+
+---
+
 ## Requisitos
 
-- Python 3.10 o superior
-- Pandas
-- Requests
-- LM Studio con un modelo local compatible (por ejemplo Nous Hermes Mistral)
+Para ejecutar el flujo completo del repositorio:
+
+### Parte Python
+- Python 3.10 o superior  
+- Funciona en cualquier equipo estándar
+
+### Parte IA local (LM Studio)
+Los requerimientos dependen del modelo elegido:
+
+- CPU: suficiente para modelos livianos  
+- RAM: desde 8 GB (modelos pequeños)  
+- GPU: opcional, mejora los tiempos de respuesta  
+- Conexión a internet: no requerida para la ejecución
+
+El proyecto está diseñado para adaptarse al hardware disponible y no exige infraestructura especializada.
 
 No se requieren cuentas, pagos ni servicios externos.
 
@@ -121,20 +176,13 @@ Al finalizar este ejercicio, el estudiante debería ser capaz de:
 
 Este proyecto está pensado para estudiantes de análisis de datos con nivel intermedio que deseen dar el primer paso hacia flujos de trabajo más estructurados sin introducir complejidad innecesaria.
 
----
+Se priorizan criterios pedagógicos, accesibilidad y reproducibilidad.
 
-## 🔧 Requerimientos de hardware
+Existen múltiples formas de enriquecer o sofisticar el pipeline (otras herramientas, servicios pagos, arquitecturas más complejas, optimizaciones adicionales, etc.).
 
-Para ejecutar el flujo completo de este repositorio (análisis de datos con Python y generación de reportes con IA local):  
+Aquí se eligió deliberadamente un enfoque simple, local y abierto, pensado para facilitar el aprendizaje, la comprensión de los conceptos y la experimentación por parte de personas que están incorporando estas herramientas.
 
-- **Python + scripts:** la parte de Python es liviana y funciona en cualquier máquina con Python 3.x y memoria estándar.  
-- **IA local (LM Studio + modelo `nous‑hermes‑2‑mistral‑7b‑dpo`):** se beneficia de hardware más potente para un rendimiento óptimo:  
-  - **GPU:** ≥12 GB de VRAM para inferencia eficiente.  
-  - **RAM del sistema:** 16 – 32 GB.  
-  - **Almacenamiento:** SSD con espacio suficiente para modelos y datasets.  
-- **Opcional:** puede ejecutarse sin GPU (solo CPU), aunque con menor velocidad.  
-
-💡 Se recomienda usar siempre un **entorno virtual (`venv`)** para aislar dependencias y mantener el entorno seguro.
+El objetivo no es mostrar “la mejor” solución posible, sino una solución clara, explicable y transferible.
 
 ---
 
